@@ -92,7 +92,7 @@ To do:
 Give credit too.
 
 - This project was inspired by...
-- This project was based on [this tutorial](https://youtu.be/xV7S8BhIeBo).
+- This project was based on [this YouTube tutorial](https://youtu.be/xV7S8BhIeBo).
 - Many thanks to...
 
 ## Contact
