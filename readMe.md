@@ -1,8 +1,8 @@
-# Project Name
+# Portfolio Website Tutorial
 
 <!-- > Outline a brief description of your project. -->
 
-> Live demo [![CodePen](https://img.shields.io/badge/-Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white)](https://codepen.io/montescodes/full/PoEoJOP). <!-- If you have the project hosted somewhere, include the link here. -->
+<!-- > Live demo [![CodePen](https://img.shields.io/badge/-Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white)](https://codepen.io/montescodes/full/PoEoJOP). If you have the project hosted somewhere, include the link here. -->
 
 <!-- > To view all of my Live Demos [_Click here_](https://codepen.io/montescodes). -->
 
@@ -92,7 +92,7 @@ To do:
 Give credit too.
 
 - This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
+- This project was based on [this tutorial](https://youtu.be/xV7S8BhIeBo).
 - Many thanks to...
 
 ## Contact
