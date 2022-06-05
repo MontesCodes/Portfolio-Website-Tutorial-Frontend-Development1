@@ -18,6 +18,11 @@
   --color-grey-4: #454e56;
   --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
+  --color-blue-1: rgb(12, 37, 165);
+  --color-blue-2: rgb(21, 58, 241);
+  --color-blue-3: rgb(65, 94, 243);
+  --color-blue-4: rgb(75, 101, 233);
+  --color-blue-5: rgb(114, 135, 239);
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
@@ -142,7 +147,7 @@ section {
 }
 
 .controls .active-btn {
-  background-color: var(--color-secondary) !important;
+  background-color: var(--color-blue-1) !important;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -201,7 +206,7 @@ section {
   transition: all 0.4s ease-in-out;
   width: 65%;
   height: 100%;
-  background-color: var(--color-secondary);
+  background-color: var(--color-blue-3);
   position: absolute;
   left: 0;
   top: 0;
@@ -255,7 +260,7 @@ section {
 }
 
 .header-content .right-header .name span {
-  color: var(--color-secondary);
+  color: var(--color-blue-3);
 }
 
 .header-content .right-header p {
@@ -312,7 +317,7 @@ section {
 .about-container .right-about .about-item .abt-text .large-text {
   font-size: 3rem;
   font-weight: 700;
-  color: var(--color-secondary);
+  color: var(--color-blue-3);
 }
 
 .about-container .right-about .about-item .abt-text .small-text {
@@ -402,7 +407,7 @@ section {
   top: 0;
   left: 0;
   height: 100%;
-  background-color: var(--color-secondary);
+  background-color: var(--color-blue-3);
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   width: 20%;
@@ -466,6 +471,7 @@ section {
 
 .stat-title::before {
   content: '';
+  position: absolute;
   left: 50%;
   top: 0;
   width: 40%;
@@ -523,6 +529,135 @@ section {
   font-weight: 500;
 }
 
+.timeline .timeline-item h5 {
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.timeline .timeline-item h5 span {
+  color: var(--color-grey-2);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.timeline .timeline-item p {
+  color: var(--color-grey-2);
+}
+
+.port-text {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.portfolios {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 3rem;
+}
+
+.portfolios .portfolio-item {
+  position: relative;
+}
+
+.portfolios .portfolio-item img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+
+.portfolios .portfolio-item .hover-items {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-grey-4);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.portfolios .portfolio-item .hover-items h3 {
+  font-size: 1.5rem;
+  color: var(--color-white);
+  margin-bottom: 1.5rem;
+}
+
+.portfolios .portfolio-item .hover-items .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolios .portfolio-item .hover-items .icons .icon {
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 1rem;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.portfolios .portfolio-item .hover-items .icons .icon i {
+  font-size: 1.5rem;
+  color: var(--color-white);
+  margin: 0 1rem;
+}
+
+.portfolios .portfolio-item .hover-items .icons .icon:hover {
+  background-color: var(--color-white);
+}
+
+.portfolios .portfolio-item .hover-items .icons .icon:hover i {
+  color: var(--color-primary);
+}
+
+.portfolio-item:hover .hover-items {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 .btn-con {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -554,7 +689,7 @@ section {
 }
 
 .main-btn .btn-icon {
-  background-color: var(--color-secondary);
+  background-color: var(--color-blue-3);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -583,7 +718,7 @@ section {
 .main-btn:hover::before {
   width: 100%;
   height: 100%;
-  background-color: var(--color-secondary);
+  background-color: var(--color-blue-3);
   -webkit-transform: translateX(0);
           transform: translateX(0);
   -webkit-transition: all 0.4s ease-out;
@@ -602,7 +737,7 @@ section {
 }
 
 .main-title h2 span {
-  color: var(--color-secondary);
+  color: var(--color-blue-3);
 }
 
 .main-title h2 .bg-text {
