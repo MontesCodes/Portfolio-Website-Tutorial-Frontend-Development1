@@ -540,6 +540,35 @@ section {
   padding-top: 3.5rem;
   .left-contact {
     flex: 2;
+    h4 {
+      margin-top: 1rem;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+    p {
+      margin: 1rem 0;
+      line-height: 2rem;
+    }
+    .contact-info {
+      .contact-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+          margin: 0.3rem 0 !important;
+          padding: 0 !important;
+        }
+        .icon {
+          display: grid;
+          grid-template-columns: 40px 1fr;
+          i {
+            display: flex;
+            align-items: center;
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
   }
   .right-contact {
     flex: 3;
@@ -566,6 +595,10 @@ section {
       :last-child {
         margin-left: 1.5rem;
       }
+    }
+    .submit-btn {
+      display: flex;
+      justify-content: flex-start;
     }
   }
 }
