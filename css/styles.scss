@@ -26,6 +26,25 @@
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
+.light-mode {
+  --color-primary: #fff;
+  --color-secondary: rgb(165, 193, 249);
+  --color-white: #262b2f;
+  --color-black: #000;
+  --color-grey0: #f8f8f8;
+  --color-grey-1: #6c7983;
+  --color-grey-2: #6c7983;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #454e56;
+  --color-grey-5: #bcc1cc;
+  --color-grey-6: #12181b;
+  --color-blue-1: rgb(12, 37, 165);
+  --color-blue-2: rgb(21, 58, 241);
+  --color-blue-3: #27ae60;
+  --color-blue-4: rgb(75, 101, 233);
+  --color-blue-5: rgb(114, 135, 239);
+}
+
 body {
   background-color: var(--color-primary);
   font-family: 'Poppins', sans-serif;
@@ -134,6 +153,30 @@ section {
       color: var(--color-grey-2);
       pointer-events: none;
     }
+  }
+}
+
+.theme-btn {
+  top: 5%;
+  right: 3%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--color-grey-4);
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s ease-in-out;
+  &:active {
+    transform: translate(-3px);
+  }
+  i {
+    font-size: 1.4rem;
+    color: var(--color-grey-2);
+    pointer-events: none;
   }
 }
 
